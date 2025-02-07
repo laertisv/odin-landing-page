@@ -53,9 +53,11 @@ a {
     height: 230px;
 }
 
+
 .hero-text {
-    width: 43%;
+    width: 450px;
 }
+
 
 .hero-title {
     font-size: 48px;
@@ -80,7 +82,8 @@ a {
 }
 
 .hero-image {
-    width: 51%;
+    width: 500px;
+    height: 250px;
     display: flex;
     align-self: stretch;
     background-color: #6d747d;
