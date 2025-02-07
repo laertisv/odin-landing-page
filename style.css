@@ -139,25 +139,26 @@ img {
     padding: 80px;
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
 
 .quote-text {
-    width: 825px;
+    max-width: 825px;
+    width: 100%;
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
     color: #1F2937;
     text-align: left;
-    align-self: center;
     margin-bottom: 0px;
 }
 
 .quote-author {
-    width: 825px;
+    max-width: 825px;
+    width: 100%;
     font-size: 18px;
     font-weight: 900;
     color: #1F2937;
     text-align: right;
-    align-self: center;
     margin-top: 0px;
 }
