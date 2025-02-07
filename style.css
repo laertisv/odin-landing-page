@@ -7,8 +7,18 @@ body {
     align-items: center;
 }
 
+button {
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 32px;
+    background-color: #3882f6;
+    color: #F9FAF8;
+}
 
-/* First we fix the hero container consisting of the header and the hero section */
+
+/* Hero container (header and hero section) */
+
 .hero-container{
     display: flex;
     flex-direction: column;
@@ -20,7 +30,6 @@ body {
 
 .header,
 .hero {
-    /* We set the width of the header and hero section to 71% to make sure they match up */
     width: 71%;
     display: flex;
     background-color: #1f2937;
@@ -32,7 +41,8 @@ body {
     padding: 4px 0;
 }
 
-.logo {
+.logo,
+.call-to-action-title {
     color: #F9FAF8;
     font-size: 24px;
 }
@@ -67,20 +77,15 @@ a {
     font-weight: 900;
 }
 
-.hero-subtitle {
+.hero-subtitle,
+.call-to-action-subtitle {
     font-size: 18px;
     color: #E5E7EB;
 }
 
 .hero-button {
-    background-color: #3882f6;
-    color: #F9FAF8;
-    padding: 8px 32px;
-    margin-top: 8px;
-    border-radius: 8px;
     border: 1px solid #3882f6;
-    font-size: 18px;
-    cursor: pointer;
+    margin-top: 8px;
 }
 
 .hero-image {
@@ -96,7 +101,8 @@ a {
     font-size: 18px;
 }
 
-/* Next we fix the container which includes the illustrations */
+/* Illustrations container */
+
 .illustrations-heading {
     font-size: 36px;
     font-weight: 900;
@@ -133,7 +139,7 @@ img {
     border: 2px solid #3882f6;
 }
 
-/* Next we fix the container which includes the quote */
+/* Quote container */
 
 .quote {
     display: flex;
@@ -165,4 +171,21 @@ img {
     color: #1F2937;
     text-align: right;
     margin-top: 0px;
+}
+
+/* Call to action container */
+
+.call-to-action {
+    display: flex;
+    background-color: #3882f6;
+    border-radius: 8px;
+    width: 71%;
+    justify-content: space-around;
+    margin: 80px 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.call-to-action-button {
+    border: 1px solid #F9FAF8;
 }
