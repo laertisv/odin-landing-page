@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -7,24 +7,27 @@ body {
     align-items: center;
 }
 
-.header,
-.hero {
-    width: 100%;
+
+/* First we fix the hero container consisting of the header and the hero section */
+.hero-container{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #1f2937;
-    justify-content: space-around;
+    width: 100%;
 }
 
-.header > div,
-.hero > div {
-    width: 100%;
-    max-width: 1200px; /* Consistent max-width for content */
-    padding: 0 48px; /* Consistent padding */
-    box-sizing: border-box;
+.header,
+.hero {
+    width: 71%; /* We set the width of the header and hero section to 71% to make sure they match up */
+    display: flex;
+    background-color: #1f2937;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header {
-    align-items: center;
+    padding: 4px 0;
 }
 
 .logo {
@@ -35,26 +38,28 @@ body {
 ul {
     list-style-type: none;
     display: flex;
-    gap: 16px;
+    gap: 24px;
     font-size: 18px;
-    color: #E5E7EB;
 }
 
 a {
     color: #e5e7eb;
     text-decoration: none;
-    font-size: 18px;
 }
 
 .hero {
-    align-items: center;
-    gap: 16px;
+    padding: 100px 0;
+    height: 230px;
 }
 
+.hero-text {
+    width: 43%;
+}
 
 .hero-title {
     font-size: 48px;
     color: #F9FAF8;
+    font-weight: 900;
 }
 
 .hero-subtitle {
@@ -62,12 +67,25 @@ a {
     color: #E5E7EB;
 }
 
+.hero-button {
+    background-color: #3882f6;
+    color: #F9FAF8;
+    padding: 8px 32px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #3882f6;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 .hero-image {
+    width: 51%;
     display: flex;
-    height: 200px;
-    width: 400px;
+    align-self: stretch;
     background-color: #6d747d;
     justify-content: center;
     align-items: center;
-    color: #F9FAF8
+    color: #F9FAF8;
+    font-size: 18px;
 }
+
