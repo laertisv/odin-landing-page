@@ -15,12 +15,13 @@ body {
     align-items: center;
     background-color: #1f2937;
     width: 100%;
+    padding-bottom: 40px;
 }
 
 .header,
 .hero {
     /* We set the width of the header and hero section to 71% to make sure they match up */
-    width: 71%; 
+    width: 71%;
     display: flex;
     background-color: #1f2937;
     justify-content: space-between;
@@ -55,7 +56,8 @@ a {
 
 
 .hero-text {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
 }
 
 
@@ -82,7 +84,8 @@ a {
 }
 
 .hero-image {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     height: 250px;
     display: flex;
     align-self: stretch;
@@ -136,7 +139,8 @@ img {
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
-    padding: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     width: 100%;
     justify-content: center;
     align-items: center;
